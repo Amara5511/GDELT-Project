@@ -91,3 +91,6 @@ The notebook's second cell installs everything for you via `%pip install`. Run i
 - **Context:** report which of the Political/Economic/Health context proportions have an IRR significantly different from 1, and in which direction.
 - `EPS`/`MIN_SAMPLES` (DBSCAN) and `NUM_TOPICS` (LDA) are analytic choices made in the notebook — revisit and justify them for your own write-up rather than leaving them at their defaults.
 
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
