@@ -1,0 +1,6 @@
+,coef,IRR,IRR_ci_lower,IRR_ci_upper,p_value
+Intercept,0.306,1.358,0.868,2.125,0.18
+Political_Prop,0.124,1.132,0.779,1.645,0.517
+Economic_Prop,0.025,1.025,0.725,1.45,0.887
+Health_Prop,0.054,1.055,0.748,1.487,0.759
+Tone_Overall_Mean,-0.014,0.986,0.922,1.054,0.683
