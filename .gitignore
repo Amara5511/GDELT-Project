@@ -1,0 +1,38 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Environment / secrets
+.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Generated outputs
+outputs/
+*.log
+
+# Data (uncomment if the raw dataset should not be tracked in git)
+# gdelt_analytical_dataset_v1.xlsx
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
