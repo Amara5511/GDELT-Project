@@ -6,7 +6,7 @@ Record_ID,url,status,word_count,reason
 20220101121500-115,https://www.southeastasiapost.com/news/272078258/india-pakistan-exchange-list-of-civilian-prisoners-fishermen,ok,719,
 20220101121500-129,https://www.heraldscotland.com/news/homenews/19819451.many-firms-face-precarious-situation-start-2022-business-chief-warns/,ok,646,
 20220101121500-131,https://www.thedailystar.net/youth/education/news/students-happy-new-books-new-years-day-2930051,disallowed,0,robots.txt disallows this path
-20220101121500-139,https://www.netindian.in/news/national/external-affairs/india-pakistan-exchange-lists-of-prisoners-under-2008-agreement,error,0,"HTTPSConnectionPool(host='www.netindian.in', port=443): Max retries exceeded with url: /news/national/external-affairs/india-pakistan-exchange-lists-of-prisoners-under-2008-agreement (Caused by NameResolutionError(""<urllib3.connection.HTTPSConnection object at 0x0000021E96A1C8D0>: Failed to resolve 'www.netindian.in' ([Errno 11001] getaddrinfo failed)""))"
+20220101121500-139,https://www.netindian.in/news/national/external-affairs/india-pakistan-exchange-lists-of-prisoners-under-2008-agreement,error,0,"HTTPSConnectionPool(host='www.netindian.in', port=443): Max retries exceeded with url: /news/national/external-affairs/india-pakistan-exchange-lists-of-prisoners-under-2008-agreement (Caused by NameResolutionError(""<urllib3.connection.HTTPSConnection object at 0x000002D932E6FA90>: Failed to resolve 'www.netindian.in' ([Errno 11001] getaddrinfo failed)""))"
 20220101121500-169,https://www.vanguardngr.com/2022/01/new-year-shun-divisiveness-consolidate-on-gains-sanwo-olu-urges-lagosians/,disallowed,0,robots.txt disallows this path
 20220101121500-272,https://www.arabnews.com/node/1996336/middle-east,disallowed,0,robots.txt disallows this path
 20220101121500-283,https://news.webindia123.com/news/Articles/India/20220101/3884267.html,ok,468,
@@ -22,7 +22,7 @@ Record_ID,url,status,word_count,reason
 20220102121500-74,https://www.times-series.co.uk/news/national/19819976.pictures-world-fur-flippers-feathers-2021/,ok,222,
 20220102121500-75,https://www.bignewsnetwork.com/news/272083287/abu-dhabi-international-airport-celebrates-40-years-of-development,disallowed,0,robots.txt disallows this path
 20220102121500-109,https://mb.com.ph/2022/01/02/dotr-to-conduct-random-antigen-test-to-mrt-lrt-passengers/,disallowed,0,robots.txt disallows this path
-20220102121500-127,https://news.webindia123.com/news/Articles/World/20220102/3884794.html,error,0,"HTTPSConnectionPool(host='news.webindia123.com', port=443): Read timed out. (read timeout=20)"
+20220102121500-127,https://news.webindia123.com/news/Articles/World/20220102/3884794.html,ok,598,
 20220102121500-139,https://www.thehindu.com/news/national/in-pandemic-hit-2020-21-railways-earned-over-500-crore-from-tatkal-premium-tatkal-tickets/article38091915.ece,disallowed,0,robots.txt disallows this path
 20220102121500-140,https://www.sydneysun.com/news/272083345/worlds-largest-free-trade-deal-boosts-confidence-of-enterprises,ok,754,
 20220102121500-141,https://news.webindia123.com/news/Articles/India/20220102/3884777.html,ok,1202,

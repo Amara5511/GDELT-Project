@@ -65,7 +65,14 @@ while True:
         _field_limit //= 10
 
 USER_AGENT = "Mozilla/5.0 (compatible; AcademicResearchBot/1.0; +mailto:ezechetamaureen@gmail.com)"
-REQUEST_TIMEOUT = (10, 20)  # (connect, read) seconds
+REQUEST_TIMEOUT = (10, 20)  # (connect, read) seconds -- applies to requests.get() calls
+
+import socket
+socket.setdefaulttimeout(30)  # CRITICAL: urllib.robotparser (used by is_allowed() below)
+                               # has NO timeout of its own by default -- a single slow or
+                               # unresponsive robots.txt server can hang the whole script
+                               # indefinitely otherwise. This sets a global backstop that
+                               # robotparser's internal urlopen() calls respect automatically.
 REQUEST_DELAY_SECONDS = 1.0  # be polite -- one request per domain-visit at a time
 MIN_WORD_COUNT = 50  # articles shorter than this are usually paywalled stubs / nav text, not real content
 
