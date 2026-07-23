@@ -36,4 +36,7 @@ outputs/
 build/
 dist/
 *.egg-info/
+<<<<<<< HEAD
 raw_gkg_extraction.csv
+=======
+>>>>>>> 94a25b1c6f6125d820102ef4a9e01638ffa66d91
