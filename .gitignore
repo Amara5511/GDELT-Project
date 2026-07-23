@@ -36,3 +36,4 @@ outputs/
 build/
 dist/
 *.egg-info/
+raw_gkg_extraction.csv
