@@ -1,3 +1,7 @@
+requests
+tqdm
+beautifulsoup4
+spacy
 pandas
 numpy
 matplotlib
@@ -10,5 +14,4 @@ geopandas
 libpysal
 esda
 shapely
-openpyxl
 jupyter

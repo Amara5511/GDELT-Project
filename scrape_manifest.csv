@@ -1,0 +1,33 @@
+Record_ID,url,status,word_count,reason
+20220101121500-6,https://www.majorcadailybulletin.com/news/local/2022/01/01/95185/mbe-for-lloyd-milen.html,ok,606,
+20220101121500-16,https://mb.com.ph/2022/01/01/two-fireworks-related-injuries-recorded-in-qc-hospital-on-new-years-day/,disallowed,0,robots.txt disallows this path
+20220101121500-28,https://www.dawn.com/news/1667014,ok,606,
+20220101121500-44,https://www.bangkokpost.com/thailand/general/2240683/woman-with-3-jabs-has-omicron-in-nakhon-si-thammarat,ok,500,
+20220101121500-115,https://www.southeastasiapost.com/news/272078258/india-pakistan-exchange-list-of-civilian-prisoners-fishermen,ok,719,
+20220101121500-129,https://www.heraldscotland.com/news/homenews/19819451.many-firms-face-precarious-situation-start-2022-business-chief-warns/,ok,646,
+20220101121500-131,https://www.thedailystar.net/youth/education/news/students-happy-new-books-new-years-day-2930051,disallowed,0,robots.txt disallows this path
+20220101121500-139,https://www.netindian.in/news/national/external-affairs/india-pakistan-exchange-lists-of-prisoners-under-2008-agreement,error,0,"HTTPSConnectionPool(host='www.netindian.in', port=443): Max retries exceeded with url: /news/national/external-affairs/india-pakistan-exchange-lists-of-prisoners-under-2008-agreement (Caused by NameResolutionError(""<urllib3.connection.HTTPSConnection object at 0x0000021E96A1C8D0>: Failed to resolve 'www.netindian.in' ([Errno 11001] getaddrinfo failed)""))"
+20220101121500-169,https://www.vanguardngr.com/2022/01/new-year-shun-divisiveness-consolidate-on-gains-sanwo-olu-urges-lagosians/,disallowed,0,robots.txt disallows this path
+20220101121500-272,https://www.arabnews.com/node/1996336/middle-east,disallowed,0,robots.txt disallows this path
+20220101121500-283,https://news.webindia123.com/news/Articles/India/20220101/3884267.html,ok,468,
+20220101121500-339,https://www.bignewsnetwork.com/news/272078720/parents-breathe-a-sigh-of-relief-as-co-win-registration-opens-for-15-18-year-old-children,disallowed,0,robots.txt disallows this path
+20220101121500-420,https://www.southeastasiapost.com/news/272078249/philippines-logs-3617-new-covid-19-cases-total-rises-to-2847486,ok,562,
+20220101121500-430,https://www.nbcnewyork.com/entertainment/entertainment-news/kate-middleton-and-prince-william-sparkle-in-new-photo-with-new-years-message/3474861/,ok,335,
+20220101121500-444,https://www.southeastasiapost.com/news/272076979/worlds-largest-free-trade-deal-takes-effect-on-first-day-of-2022,ok,731,
+20220101121500-449,https://www.southeastasiapost.com/news/272078485/the-sword-of-contempt,ok,882,
+20220102121500-8,https://www.messengernewspapers.co.uk/news/national/19819976.pictures-world-fur-flippers-feathers-2021/,ok,222,
+20220102121500-10,http://www.msn.com/en-us/news/world/record-cargo-shipped-through-egypt-s-suez-canal-last-year/ar-AASmbL4,error,0,only 0 words extracted (likely paywall/stub/non-article page)
+20220102121500-16,https://www.bignewsnetwork.com/news/272083345/worlds-largest-free-trade-deal-boosts-confidence-of-enterprises,disallowed,0,robots.txt disallows this path
+20220102121500-46,https://www.leighjournal.co.uk/news/national/19819976.pictures-world-fur-flippers-feathers-2021/,ok,222,
+20220102121500-74,https://www.times-series.co.uk/news/national/19819976.pictures-world-fur-flippers-feathers-2021/,ok,222,
+20220102121500-75,https://www.bignewsnetwork.com/news/272083287/abu-dhabi-international-airport-celebrates-40-years-of-development,disallowed,0,robots.txt disallows this path
+20220102121500-109,https://mb.com.ph/2022/01/02/dotr-to-conduct-random-antigen-test-to-mrt-lrt-passengers/,disallowed,0,robots.txt disallows this path
+20220102121500-127,https://news.webindia123.com/news/Articles/World/20220102/3884794.html,error,0,"HTTPSConnectionPool(host='news.webindia123.com', port=443): Read timed out. (read timeout=20)"
+20220102121500-139,https://www.thehindu.com/news/national/in-pandemic-hit-2020-21-railways-earned-over-500-crore-from-tatkal-premium-tatkal-tickets/article38091915.ece,disallowed,0,robots.txt disallows this path
+20220102121500-140,https://www.sydneysun.com/news/272083345/worlds-largest-free-trade-deal-boosts-confidence-of-enterprises,ok,754,
+20220102121500-141,https://news.webindia123.com/news/Articles/India/20220102/3884777.html,ok,1202,
+20220102121500-150,https://www.stiripesurse.ro/gcs-17-deaths-in-sars-cov-2-infected-patients-reported-in-last-24-hours_2168865.html,ok,210,
+20220102121500-164,https://news.webindia123.com/news/Articles/World/20220102/3884800.html,ok,350,
+20220102121500-176,https://zeenews.india.com/india/tamil-nadu-to-offer-virtual-treatment-for-covid-19-patients-details-here-2424688.html,ok,612,
+20220102121500-188,https://www.theargus.co.uk/news/national/19819976.pictures-world-fur-flippers-feathers-2021/,ok,221,
+20220102121500-221,https://www.cotswoldjournal.co.uk/news/national/19819976.pictures-world-fur-flippers-feathers-2021/,ok,222,
