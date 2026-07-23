@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 requests
 tqdm
 beautifulsoup4
 spacy
-=======
->>>>>>> 94a25b1c6f6125d820102ef4a9e01638ffa66d91
 pandas
 numpy
 matplotlib
@@ -17,8 +14,5 @@ geopandas
 libpysal
 esda
 shapely
-<<<<<<< HEAD
-=======
 openpyxl
->>>>>>> 94a25b1c6f6125d820102ef4a9e01638ffa66d91
 jupyter
