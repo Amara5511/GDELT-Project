@@ -1,0 +1,21 @@
+Record_ID,url,status,word_count,reason
+20220101121500-2,https://www.smdailyjournal.com/news/world/pope-in-new-years-homily-praises-women-as-peacemakers/article_d03460ca-498a-5b1a-b3ea-39ec531ef2ea.html,error,0,HTTP 403
+20220101121500-4,https://townhall.com/tipsheet/mattvespa/2022/01/01/cbs-news-asked-kamala-harris-about-inflation-and-the-answer-was-a-total-train-w-n2601252,disallowed,0,robots.txt disallows this path
+20220101121500-5,https://www.gov.ms/2022/01/01/new-years-message-premier-hon-joseph-e-farrell/,error,0,"HTTPSConnectionPool(host='www.gov.ms', port=443): Max retries exceeded with url: /2022/01/01/new-years-message-premier-hon-joseph-e-farrell/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:992)')))"
+20220101121500-6,https://www.majorcadailybulletin.com/news/local/2022/01/01/95185/mbe-for-lloyd-milen.html,ok,607,
+20220101121500-8,https://www.houstonchronicle.com/news/article/South-Dakota-film-to-feature-Native-American-16734081.php,error,0,HTTP 404
+20220101121500-12,https://bdnews24.com/world/2022/01/01/violence-against-women-insults-god-pope-francis-says-in-new-year-s-speech,disallowed,0,robots.txt disallows this path
+20220101121500-16,https://mb.com.ph/2022/01/01/two-fireworks-related-injuries-recorded-in-qc-hospital-on-new-years-day/,disallowed,0,robots.txt disallows this path
+20220101121500-28,https://www.dawn.com/news/1667014,ok,606,
+20220101121500-33,https://muscatinejournal.com/muscatine/news/local/annual-eagles-and-ivories-concert-expected-to-return-fully-for-its-28th-year/article_709c5b7c-8c2c-5a66-8e1e-b8d36ade2737.html,error,0,HTTP 429
+20220101121500-40,https://www.kulr8.com/online_features/education/want-a-good-job-with-growth-potential-supply-chain-hiring-is-skyrocketing/article_820cdb61-f50b-564b-b6a4-269f76a9cfdd.html,error,0,HTTP 429
+20220101121500-42,https://www.ohiostandard.com/news/272078446/report-covid-19-causes-71-drop-in-uk-air-travel,ok,534,
+20220101121500-43,https://www.dailymail.co.uk/news/article-10360465/Pope-Francis-uses-New-Year-message-call-end-violence-against-women.html,ok,485,
+20220101121500-44,https://www.bangkokpost.com/thailand/general/2240683/woman-with-3-jabs-has-omicron-in-nakhon-si-thammarat,ok,502,
+20220101121500-45,https://www.catholictranscript.org/china-has-the-highest-number-of-covid-cases-in-a-week-since-the-global-original-epidemic-was-brought-under-control/,error,0,only 0 words extracted (likely paywall/stub/non-article page)
+20220101121500-67,https://www.deccanherald.com/national/staycations-workations-homestays-emerge-new-watchwords-for-tourism-sector-1066860.html,disallowed,0,robots.txt disallows this path
+20220101121500-72,https://www.msn.com/en-in/news/world/israel-detects-first-case-of-florona-all-you-need-to-know-about-double-infection-why-are-doctors-concerned/ar-AASksF5,error,0,only 0 words extracted (likely paywall/stub/non-article page)
+20220101121500-92,https://www.newsminer.com/marijuana/green-raven-soars-in-wasilla/article_d5593bb4-539a-11ec-8cd7-6f8523d21b4c.html,error,0,HTTP 429
+20220101121500-96,https://www.nbcnewyork.com/news/national-international/colorado-fire-victims-begin-new-year-surveying-destruction/3474829/,ok,1175,
+20220101121500-115,https://www.southeastasiapost.com/news/272078258/india-pakistan-exchange-list-of-civilian-prisoners-fishermen,ok,719,
+20220101121500-118,https://ariananews.af/india-delivers-500000-doses-of-covid-19-vaccine-to-afghanistan/,error,0,HTTP 403
