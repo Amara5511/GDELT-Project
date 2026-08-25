@@ -37,8 +37,12 @@ build/
 dist/
 *.egg-info/
 raw_gkg_extraction.csv
-scrape_manifest.csv
 test_raw.csv
-gdelt_cleaned_dataset.csv
 article_text.jsonl
 test_articles.jsonl
+gdelt_cleaned_dataset.csv
+
+# gdelt_cleaned_dataset.csv and scrape_manifest.csv are tracked deliberately --
+# this repo is the evidential record for the module. If either file is too
+# large for git, commit a documented random sample instead, alongside a
+# SHA-256 checksum of the full file (see commit_data_sample.py).

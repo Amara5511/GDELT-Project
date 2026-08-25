@@ -25,8 +25,12 @@ Country names are taken directly from GDELT's own human-readable
 V2Locations "FullName" sub-field (documented format: a country-type
 location's FullName IS the country name; city/state-type locations are
 "City, State, Country" or "State, Country" -- country is the last
-comma-separated segment). No separate FIPS-code lookup table is used,
-to avoid introducing another source of unverified/incorrect mappings.
+comma-separated segment). The number of segments is validated against
+what each Location Type documents before the last segment is trusted as
+a country; truncated/malformed FullName values (e.g. a bare state name
+with no trailing country) are treated as having no usable country rather
+than mislabelled. No separate FIPS-code lookup table is used, to avoid
+introducing another source of unverified/incorrect mappings.
 
 Rows with no usable location or no themes are dropped (logged, not
 silently discarded) since they can't support the spatial/theme analysis.
@@ -91,7 +95,26 @@ def parse_themes(v2themes: str, themes_fallback: str) -> list[str]:
 
 
 def parse_first_location(v2locations: str):
-    """Returns (country, location_type, lat, lon) from the first location block, or all-None."""
+    """Returns (country, location_type, lat, lon) from the first location block, or all-None.
+
+    Country extraction is validated against GDELT's documented FullName shape for
+    each location type, rather than blindly taking the last comma-separated
+    segment. A naive "last segment" rule is only correct when FullName has the
+    number of segments that type implies; when a record is truncated or
+    malformed (a bare state/province name with no trailing country, for
+    example), the last segment is a state/province/city, not a country, and
+    taking it anyway is what was inflating Country to 500+ distinct values.
+    Records whose FullName doesn't match the expected shape for their type are
+    treated as having no usable country (dropped downstream), rather than
+    silently mislabelled.
+
+    Documented FullName shapes by Location Type:
+        1 (COUNTRY)     -> "Country"                      (1 segment)
+        2 (USSTATE)     -> "State, United States"          (2 segments, ends in "United States")
+        3 (USCITY)      -> "City, State, United States"    (3 segments, ends in "United States")
+        4 (WORLDCITY)   -> "City, [ADM1,] Country"         (>=2 segments, last is the country)
+        5 (WORLDSTATE)  -> "State/Province, Country"        (>=2 segments, last is the country)
+    """
     if not v2locations:
         return None, None, None, None
 
@@ -110,19 +133,39 @@ def parse_first_location(v2locations: str):
 
     country = None
     if fullname:
+        segments = [s.strip() for s in fullname.split(",") if s.strip()]
         if loc_type == "1":
-            # Country-level match: FullName IS the country name
-            country = fullname.strip()
-        else:
-            # "City, State, Country" or "State, Country" -> country is the last segment
-            segments = [s.strip() for s in fullname.split(",")]
-            country = segments[-1] if segments else None
+            # Country-level match: FullName IS the country name -- exactly one segment.
+            if len(segments) == 1:
+                country = segments[0]
+        elif loc_type in ("2", "3"):
+            # US state/city: FullName must genuinely end in "United States".
+            # If it doesn't (e.g. a bare "Texas" with no trailing country),
+            # the record is truncated/malformed -- don't guess a country.
+            if segments and segments[-1] == "United States":
+                country = segments[-1]
+        elif loc_type in ("4", "5"):
+            # World city/state: needs at least "X, Country" -- a single bare
+            # segment here is a state/province/city name, not a country.
+            if len(segments) >= 2:
+                country = segments[-1]
+        # Any other/unrecognised loc_type: leave country as None rather than guess.
 
     try:
         lat_f = float(lat) if lat else None
         lon_f = float(lon) if lon else None
     except ValueError:
         lat_f, lon_f = None, None
+
+    # Range guard: reject and log physically impossible coordinates instead of
+    # passing them through (this is what let the earlier offset error slip
+    # downstream undetected).
+    if lat_f is not None and not (-90.0 <= lat_f <= 90.0):
+        print(f"WARNING: rejected out-of-range latitude {lat_f!r}")
+        lat_f = None
+    if lon_f is not None and not (-180.0 <= lon_f <= 180.0):
+        print(f"WARNING: rejected out-of-range longitude {lon_f!r}")
+        lon_f = None
 
     return country, loc_type, lat_f, lon_f
 
